@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+    <!-- Barre de navigation (Navbar) -->
+    <nav>
+        <span class="navbar-brand">KOPELDA <span class="prenom">Rosine</span></span>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <section class="contact">
+        <h2 class="text-mecontacter">Vous avez un <span class="text-ici"> projet en tête ? </span> </h2>
+        <h2 class="text-contact">N’hésitez pas à me <span class="text-ici"> contacter </span> </h2>
+        <br>
+        <form id="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sujet">Votre sujet</label>
+                <input type="text" id="sujet" name="sujet" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-left">Designed by <span class="prenom">Rosine</span> with HTML CSS JS</p>
+            <p class="footer-right">Tous droits réservés - 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

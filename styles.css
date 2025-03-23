@@ -1,0 +1,447 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+/* Style pour le lien actif */
+nav ul li a.active {
+    color: #2f5f3c; 
+    border-bottom: 2px solid #2f5f3c; 
+}
+
+
+/* Sections */
+.section {
+    padding: 4rem 2rem;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Taille de police normale */
+    font-weight: bold;
+}
+
+.navbar-brand .prenom,
+.hero-text .prenom,
+.text-contact .text-ici,
+.text-mecontacter .text-ici {
+    color: #18ab81; /* Couleur du prénom (tomate) */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Espacement normal entre les liens */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Espacement réduit en haut et en bas */
+    background-color: #fff;
+    margin-top: 0; /* Supprimer la marge en haut */
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #18ab81;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+    color: #080000; /* Texte en noir */
+}
+
+
+
+/* Styles pour la page À propos */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #eae8e8;
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-text .prenom {
+    color: #18ab81; /* Couleur du prénom (tomate) */
+}
+
+.about-image {
+    width: 300px; /* Taille de l'image */
+    height: 300px; /* Taille de l'image */
+    border: 4px solid #18ab81; /* Contour coloré */
+    border-radius: 50%; /* Pour créer un cercle */
+    overflow: hidden; /* Pour s'assurer que l'image reste dans le cercle */
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour que l'image remplisse le cercle */
+}
+
+
+/* Styles pour la page Mes projets */
+.projects {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #18ab81;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row; /* Alignement horizontal */
+    gap: 1.5rem; /* Espacement entre les projets */
+    flex-wrap: wrap; /* Permet aux projets de passer à la ligne si l'espace est insuffisant */
+}
+
+.project-item {
+    flex: 1 1 calc(33.333% - 1.5rem); /* Chaque projet occupe environ 1/3 de la largeur */
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+    border-radius: 10px; /* Bords arrondis pour les projets */
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.project-item p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-item .btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #18ab81;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px; /* Bords arrondis pour les boutons */
+    transition: background-color 0.3s ease;
+}
+
+.project-item .btn:hover {
+    background-color: #18ab81; /* Changement de couleur au survol */
+}
+
+
+/* Styles pour la page Mes compétences */
+.skills {
+    padding: 2rem;
+    background-color: #eae8e8;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    gap: 1.5rem; /* Espacement réduit entre Soft Skills et Hard Skills */
+}
+
+.skills-category {
+    flex: 1; /* Chaque catégorie occupe une partie égale de l'espace */
+}
+
+.rounded-box {
+    background-color: #f9f9f9; /* Fond légèrement gris */
+    padding: 1rem; /* Espacement intérieur réduit */
+    border: 1px solid #ddd; /* Bordure subtile */
+    border-radius: 10px; /* Bords arrondis */
+}
+
+.skills-category h3 {
+    font-size: 1.25rem; /* Taille de police réduite */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Styles pour les Soft Skills et Hard Skills */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-item {
+    margin-bottom: 0.5rem; /* Espacement réduit entre les compétences */
+}
+
+.skill-item h4 {
+    font-size: 1rem; /* Taille de police réduite */
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.skill-bar {
+    width: 90%;
+    height: 8px; /* Hauteur de la barre réduite */
+    background-color: #ddd;
+    border-radius: 5px; /* Bords arrondis pour la barre de progression */
+    overflow: hidden; /* Pour s'assurer que la barre de progression reste dans le conteneur */
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #18ab81; /* Couleur de la barre de progression */
+    border-radius: 5px; /* Bords arrondis pour la barre de progression */
+}
+
+.skill-percent {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem; /* Taille de police réduite */
+    color: #666;
+    text-align: right;
+}
+
+
+/* style pour la page contact*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.contact {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #080000 !important;
+    color: #fff; /* Texte en blanc */
+/*}*/
+
+/* Barre de navigation (Navbar) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand .prenom {
+    color: #18ab81; /* Couleur du prénom (tomate) */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #080000;
+    color: #fff; /* Texte en blanc */
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem; /* Espacement entre les champs Nom et Prénom */
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    flex: 1; /* Les champs Nom et Prénom occupent une largeur égale */
+    text-align: left; /* Les labels sont alignés à gauche */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Bords arrondis */
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fond des champs */
+    color: #000000; /* Texte en blanc */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block; /* Bouton réduit */
+    padding: 0.5rem 1.5rem;
+    background-color: #18ab81;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #18ab81;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Alignement gauche et droite */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.footer-content .prenom {
+    color: #18ab81; /* Couleur du prénom (tomate) */
+}
